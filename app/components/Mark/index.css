@@ -1,0 +1,11 @@
+.mark {
+    /* filter: blur(2px); */
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.4s;
+}
+.mark:hover{
+    transform: scale(1.2);
+    filter: blur(0px);
+    opacity: 1;
+}

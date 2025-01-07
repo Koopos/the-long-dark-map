@@ -1,0 +1,9 @@
+.dot {
+    filter: blur(20px);
+    cursor: pointer;
+    opacity: 0.4;
+}
+.dot:hover {
+    filter: blur(10px);
+    opacity: 0.8;
+}

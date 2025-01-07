@@ -2,6 +2,8 @@ import { useState } from 'react'
 import Drawer from 'react-modern-drawer'
 import 'react-modern-drawer/dist/index.css'
 
+import './index.css'
+
 interface MarkProps {
     images: Array<string>
     position: {x: string, y: string}
@@ -18,7 +20,7 @@ export function Mark(props: MarkProps) {
 
     return (
         <>
-         <div className="absolute w-[40px] h-[40px] bg-[blue]" onClick={toggleDrawer} style={{top: props.position.y, left: props.position.x}}></div>
+         <div className="absolute w-[20px] h-[20px] rounded-[20px] mark" onClick={toggleDrawer} style={{top: props.position.y, left: props.position.x,border: '4px solid blue'}}></div>
          <Drawer
             open={isOpen}
             onClose={toggleDrawer}
